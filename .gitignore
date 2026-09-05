@@ -1,0 +1,52 @@
+# ---- 密钥与数据(绝不上传) ----
+.env
+.env.*
+!*.example
+
+# ---- 数据(客户隐私) ----
+data/
+*.db
+*.sqlite*
+*.jsonl
+*.csv
+!config.py
+
+# ---- 运行环境 ----
+venv/
+node_modules/
+__pycache__/
+*.pyc
+
+# ---- 会话凭据(WhatsApp/微信) ----
+wa_session*/
+openclaw-weixin/
+credentials/
+devices/
+identity/
+state/
+
+# ---- 备份与日志 ----
+*.bak*
+backup-*/
+*.log
+logs/
+tool-output/
+
+# ---- 临时/诊断脚本(不上传) ----
+*_test*.mjs
+*_diag*.mjs
+wstest*.cjs
+wskeep*.cjs
+sockstest*.cjs
+btest.mjs
+clean_test.mjs
+pair_*.mjs
+diag_pair.mjs
+check_*.py
+diag_*.py
+
+# ---- 系统 ----
+*.lock
+package-lock.json
+restart_gateway.sh
+update_sub.sh
